@@ -1,0 +1,13 @@
+<% if (database === 'MongoDB') { %>
+const mongoose = require('mongoose');
+
+const UserSchema = new mongoose.Schema({
+  email: String,
+  password: String,
+});
+
+module.exports = mongoose.model('User', UserSchema);
+<% } else if (database === 'PostgreSQL') { %>
+// Assuming Prisma schema is defined separately
+// You don’t need a model file in Prisma, but this file can be used for helper functions
+<% } %>

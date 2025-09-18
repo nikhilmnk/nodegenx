@@ -1,0 +1,13 @@
+{
+  "name": "<%= projectName.toLowerCase().replace(/\\s+/g, '-') %>",
+  "version": "1.0.0",
+  "main": "src/<%= language === 'TypeScript' ? 'app.ts' : 'app.js' %>",
+  "license": "MIT",
+  "scripts": {
+    "start": "<%= language === 'TypeScript' ? 'ts-node src/app.ts' : 'node src/app.js' %>"<% if (language === 'TypeScript') { %>,
+    "dev": "ts-node-dev src/app.ts",
+    "build": "tsc"<% } %><% if (linting) { %>,
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write ."<% } %>
+  }
+}

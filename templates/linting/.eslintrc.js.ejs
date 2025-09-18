@@ -1,0 +1,22 @@
+module.exports = {
+  env: {
+    browser: false,
+    commonjs: true,
+    es2021: true,
+    node: true,
+  },
+  parser: "<%= language === 'TypeScript' ? '@typescript-eslint/parser' : undefined %>",
+  extends: [
+    "eslint:recommended",
+    "<%= language === 'TypeScript' ? 'plugin:@typescript-eslint/recommended' : '' %>",
+    "plugin:prettier/recommended",
+  ].filter(Boolean),
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: "module",
+  },
+  plugins: [
+    "<%= language === 'TypeScript' ? '@typescript-eslint' : '' %>",
+  ].filter(Boolean),
+  rules: {},
+};

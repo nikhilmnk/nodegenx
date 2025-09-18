@@ -1,0 +1,30 @@
+{
+  "name": "nodegenx",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate Node.js backend project.",
+  "main": "index.js",
+  "bin": {
+    "nodegenx": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "node",
+    "backend",
+    "generator"
+  ],
+  "author": "M Nikhil Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.2",
+    "inquirer": "^12.9.6",
+    "ora": "^9.0.0"
+  }
+}

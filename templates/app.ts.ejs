@@ -1,0 +1,37 @@
+import express, { Request, Response } from 'express';
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Optional: Logging (Morgan)
+<% if (logging) { %>
+import morgan from 'morgan';
+app.use(morgan('dev'));
+<% } %>
+
+// Middleware
+<% if (middleware.includes('CORS')) { %>
+import cors from 'cors';
+app.use(cors());
+<% } %>
+
+<% if (middleware.includes('Helmet')) { %>
+import helmet from 'helmet';
+app.use(helmet());
+<% } %>
+
+<% if (middleware.includes('Rate Limiting')) { %>
+import rateLimit from 'express-rate-limit';
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100
+});
+app.use(limiter);
+<% } %>
+
+app.get('/', (req: Request, res: Response) => {
+  res.send('Hello from <%= projectName %>!');
+});
+
+app.listen(port, () => {
+  console.log(`🚀 Server running on port ${port}`);
+});
