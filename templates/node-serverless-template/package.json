@@ -1,0 +1,17 @@
+{
+  "name": "node-serverless-template",
+  "version": "1.0.0",
+  "main": "src/functions/auth.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "invoke": "serverless invoke -f auth",
+    "offline": "serverless offline"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "serverless": "^3.50.0",
+    "serverless-offline": "^12.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+service: node-serverless-template
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    JWT_SECRET: secret
+
+functions:
+  auth:
+    handler: src/functions/auth.handler
+    events:
+      - http:
+          path: auth
+          method: post

@@ -1,13 +1,14 @@
 {
   "name": "nodegenx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to generate Node.js backend project.",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "bin": {
-    "nodegenx": "./index.js"
+    "nodegenx": "./bin/cli.js"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./bin/cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,6 +22,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "child_process": "^1.0.2",
+    "commander": "^14.0.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "fs-extra": "^11.3.2",

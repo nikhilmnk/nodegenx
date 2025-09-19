@@ -1,0 +1,19 @@
+{
+  "name": "ts-event-driven",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "ts-node-dev src/app.ts",
+    "start": "node dist/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "@prisma/client": "^5.0.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2",
+    "@types/express": "^4.17.17"
+  }
+}

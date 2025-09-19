@@ -1,0 +1,1 @@
+// Prisma handles models via schema.prisma
