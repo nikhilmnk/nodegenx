@@ -14,7 +14,6 @@ import chalk from "chalk";
  */
 export default async function run({ projectName, template } = {}) {
   console.log(chalk.cyanBright("🚀 Welcome to Create Node Backend CLI!\n"));
-
   try {
     // --- Determine target path and project name ---
     let targetPath;
@@ -52,7 +51,7 @@ export default async function run({ projectName, template } = {}) {
     // --- Interactive/manual project generation ---
     const answers = await promptUser({ projectName });
     // Override answers.projectName to ensure correct folder if user passed "."
-    answers.projectName = projectName;
+    // answers.projectName = projectName;
     await generateProject(answers);
     showSuccess(projectName);
   } catch (err) {

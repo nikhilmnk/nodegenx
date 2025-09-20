@@ -76,13 +76,13 @@ export async function promptUser({ template }) {
       type: "confirm",
       name: "git",
       message: "Do you want to initialize a Git repository?",
-      default: true,
+      default: false,
     },
     {
       type: "confirm",
       name: "installDependencies",
       message: "Do you want to install Node modules automatically?",
-      default: true,
+      default: false,
     },
     {
       type: "input",

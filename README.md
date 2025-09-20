@@ -6,7 +6,7 @@ Nodegenx is a CLI tool designed to generate a complete Node.js backend project s
 
 ## 📦 Package Information
 - **Name**: nodegenx  
-- **Version**: 1.0.1  
+- **Version**: 1.0.2  
 - **Repository**: [GitHub](https://github.com/nikhilmnk/nodegenx)  
 - **Author**: M Nikhil Kumar  
 - **License**: MIT
@@ -60,22 +60,16 @@ ecommerce/
 │   .eslintrc.js
 │   .prettierrc
 │   package.json
-│
 └───src
     │   app.js
-    │
     ├───config
     │       db.js
-    │
     ├───controllers
     │       auth.controller.js
-    │
     ├───middlewares
     │       auth.middleware.js
-    │
     ├───models
     │       user.model.js
-    │
     └───routes
             auth.routes.js
 ```
@@ -90,22 +84,16 @@ js-jwt-rest/
 │   .eslintrc.js
 │   .prettierrc
 │   package.json
-│
 └───src
     │   app.js
-    │
     ├───config
     │       db.js
-    │
     ├───controllers
     │       auth.controller.js
-    │
     ├───middlewares
     │       auth.middleware.js
-    │
     ├───models
     │       user.model.js
-    │
     └───routes
             auth.routes.js
 ```
@@ -119,13 +107,10 @@ js-rest-swagger/
 │   .env
 │   .eslintrc.js
 │   package.json
-│
 └───src
     │   app.js
-    │
     ├───config
     │       db.js
-    │
     └───swagger
             swagger.js
 ```
@@ -150,22 +135,16 @@ node-oauth-rest/
 │   .eslintrc.js
 │   .prettierrc
 │   package.json
-│
 └───src
     │   app.js
-    │
     ├───config
     │       db.js
-    │
     ├───controllers
     │       auth.controller.js
-    │
     ├───middlewares
     │       auth.middleware.js
-    │
     ├───models
     │       user.model.js
-    │
     └───routes
             auth.routes.js
 ```
@@ -179,25 +158,18 @@ node-prisma-rest/
 │   .env
 │   .eslintrc.js
 │   package.json
-│
 ├───prisma
 │       schema.prisma
-│
 └───src
     │   app.js
-    │
     ├───config
     │       db.js
-    │
     ├───controllers
     │       example.controller.js
-    │
     ├───middlewares
     │       example.middleware.js
-    │
     ├───models
     │       example.model.js
-    │
     └───routes
             example.routes.js
 ```
@@ -211,17 +183,13 @@ node-serverless-template/
 │   .env
 │   package.json
 │   serverless.yml
-│
 └───src
     ├───functions
     │       auth.js
-    │
     ├───middlewares
     │       authMiddleware.js
-    │
     ├───models
     │       user.js
-    │
     └───utils
             response.js
 ```
@@ -236,23 +204,17 @@ ts-event-driven/
 │   .eslintrc.js
 │   package.json
 │   tsconfig.json
-│
 └───src
     │   app.ts
-    │
     ├───config
     │       db.ts
-    │
     ├───controllers
     │       sampleController.ts
-    │
     ├───events
     │   ├───consumers
     │   │       sampleConsumer.ts
-    │   │
     │   └───producers
     │           sampleProducer.ts
-    │
     └───middlewares
             loggerMiddleware.ts
 ```
@@ -268,22 +230,16 @@ ts-jwt-graphql/
 │   .prettierrc
 │   package.json
 │   tsconfig.json
-│
 └───src
     │   app.ts
-    │
     ├───config
     │       db.ts
-    │
     ├───graphql
     │   │   schema.ts
-    │   │
     │   └───resolvers
     │           user.resolver.ts
-    │
     ├───middlewares
     │       auth.middleware.ts
-    │
     └───models
             user.model.ts
 ```
@@ -298,19 +254,14 @@ ts-microservice-template/
 │   .eslintrc.js
 │   package.json
 │   tsconfig.json
-│
 └───src
     │   app.ts
-    │
     ├───controllers
     │       user.controller.ts
-    │
     ├───middlewares
     │       auth.middleware.ts
-    │
     ├───routes
     │       user.routes.ts
-    │
     └───services
             authService.ts
             userService.ts
