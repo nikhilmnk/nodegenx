@@ -13,12 +13,10 @@ app.use(morgan('dev'));
 const cors = require('cors');
 app.use(cors());
 <% } %>
-
 <% if (middleware.includes('Helmet')) { %>
 const helmet = require('helmet');
 app.use(helmet());
 <% } %>
-
 <% if (middleware.includes('Rate Limiting')) { %>
 const rateLimit = require('express-rate-limit');
 const limiter = rateLimit({
@@ -27,11 +25,9 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 <% } %>
-
 app.get('/', (req, res) => {
   res.send('Hello from <%= projectName %>!');
 });
-
 app.listen(port, () => {
   console.log(`🚀 Server running on port ${port}`);
 });

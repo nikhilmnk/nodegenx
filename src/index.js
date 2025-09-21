@@ -53,7 +53,7 @@ export default async function run({ projectName, template } = {}) {
     // Override answers.projectName to ensure correct folder if user passed "."
     // answers.projectName = projectName;
     await generateProject(answers);
-    showSuccess(projectName);
+    showSuccess(answers.projectName);
   } catch (err) {
     console.error("❌ Something went wrong:", err.message);
     process.exit(1);
